@@ -1,10 +1,13 @@
+
+
 dubbo:
   application:
     name: mobile
     owner: guohao
   registry:
-    address: nacos://192.168.10.250:8848
-    group: mobile
+#    address: nacos://192.168.10.250:8848
+    address: nacos://192.168.10.210:8848
+#    group: dubbo-demo
   protocol:
     name: dubbo
     port: 20882
@@ -15,3 +18,25 @@ dubbo:
 logging:
   config:
     classpath: logback.xml
+server:
+  port: 8082
+spring:
+  application:
+    name: mobile
+  redis:
+    #    host: 192.168.2.110 #哨兵模式下不用配置
+    #    port: 6379 # 哨兵模式下不用配置
+    password: yiigoo
+    jedis:
+      pool:
+        #最大连接数
+        max-active: 1024
+        #最大阻塞等待时间(负数表示没限制)
+        max-wait: 20000
+        #最大空闲
+        max-idle: 200
+        #最小空闲
+        min-idle: 10
+    sentinel:
+      master: mymaster
+      nodes: 192.168.10.250:26377,192.168.10.250:26378,192.168.10.250:26379

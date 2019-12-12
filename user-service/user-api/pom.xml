@@ -26,6 +26,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.gh.dubbo</groupId>
+            <artifactId>dubbo-commons</artifactId>
+        </dependency>
 
     </dependencies>
 

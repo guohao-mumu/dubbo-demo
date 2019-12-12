@@ -1,0 +1,22 @@
+
+
+dubbo:
+  application:
+    name: mobile
+    owner: guohao
+  registry:
+#    address: nacos://192.168.10.250:8848
+    address: nacos://192.168.10.210:8848
+#    group: dubbo-demo
+  protocol:
+    name: dubbo
+    port: 20882
+  #  metadata-report:
+  scan:
+    base-packages: com.gh.dubbo
+
+logging:
+  config:
+    classpath: logback.xml
+server:
+  port: 8082
