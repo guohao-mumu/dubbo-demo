@@ -30,7 +30,7 @@
 
         <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
         <dubbo.boot.version>2.7.1</dubbo.boot.version>
-        <dubbo.version>2.7.2</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
 
         <dubbo.registry.nacos.version>2.7.2</dubbo.registry.nacos.version>
         <nacos.client.version>1.0.0</nacos.client.version>
